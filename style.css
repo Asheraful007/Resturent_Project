@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Caveat:wght@600&family=Inconsolata:wght@300&family=Josefin+Sans:ital,wght@0,400;1,500&display=swap');
+
+/*  */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,500&family=Poppins&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+}
+.sectionTitle{
+    margin-top:50px ;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 37px;
+    text-transform: uppercase;
+}
+/* Navbar section */
+.navbar{
+    width: 100%;
+    height: auto;
+    padding: 50px 25px;
+    position:static;
+    top: 0;    
+}
+.navbar-brand{
+    font-size:30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.navbar-brand span{
+    font-family: 'Josefin Sans', sans-serif;
+    color: crimson;
+}
+.navbar ul li a{
+    font-size: 20px;
+    margin: 0px 10px;
+    color: black;
+}
+/* Banner section */
+#banner{
+    background-image: url(./images/hero\ img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+#banner::before{
+    content:'';
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+}
+.banner-item{
+    justify-content: center;
+    position: absolute;
+    top: 33%;
+    left: 20%;
+}
+.banner-item a{
+    text-decoration: none;
+    color: white;
+}
+.banner-item h1 {
+    color: white;
+    margin-bottom:10px;
+    font-family:'Poppins', sans-serif;
+    font-size: 60px;
+}
+.banner-item h3 {
+    color: white;
+    padding: 10px 30px;
+    font-family:'Poppins', sans-serif;
+}
+
+.banner-item a button{
+    background: none;
+	color: inherit;
+	border: none;
+    margin-left: 50px;
+	padding: 5px 20px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 25px;
+}
+
+.banner-item button:hover{
+    background-color: black;
+    color: white;
+    transition: .6s;
+}
+/* About setion start */
+.about{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+.about-message{
+    align-items: center;
+}
+.about img{
+    margin: 10px;
+    height: 80vh;
+}
+.about-item .about-icon{
+    background-color: #ED4C67;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    color: white;
+}
+.about-item h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.about-item{
+    padding: 10px;
+}
+.about-item p{
+    padding: 10px 5px;
+    text-align: justify;
+}
+/* Services srction start */
+.services{
+    width: 100%;
+    height: auto;
+}
+.services .services-img{
+    min-width: 250px;
+    height: 250px;
+    background-position: center;
+    padding-top: 25px;
+    justify-content: center;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.services img{
+    height: 100%;
+    width: auto;
+    transition: 0.03s;
+}
+
+.services img:hover{
+    transform:scale(1.05);
+    transition: all 0.6s;   
+}
+.card-section{
+    text-align: center;
+    min-width: 250px;
+    height: auto;
+}
+.card-section h5{
+    text-transform: uppercase;
+}
+.card-section a{
+    text-decoration: none;
+}
+.card-section p{
+    min-width:250px;
+    text-align:center;
+}
+.servicesButton{
+    background: none;
+	color: black;
+	border: none;
+	padding: 3px 6px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    text-decoration: none;
+    border: 1px solid #ee2b4b;
+    font-size: 15px;
+    border-radius: 3px;
+    text-align: center;
+}
+.servicesButton:hover{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 3px 6px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    text-decoration: none;
+    border: 1px solid #ee2b4b;
+    font-size: 15px;
+    background-color: #ee2b4b;
+    color: white;
+    transition: .5s;
+}
+
+/* Contact Section start */
+
+.contact{
+    width: 100%;
+    height: auto;
+}
+.contactDiv{
+    background-color: #F3F4F5;
+    margin:0px 10px;
+    margin-bottom: 40px;
+    color: black;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.contactDiv:hover{
+    background-color: #ED4C67;
+    margin:0px 10px;
+    margin-bottom: 40px;
+    color:white;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: .5s;
+    cursor: pointer;
+}
+.contactDiv i{
+    font-size: 25px;
+}
+.style{
+    color: #ED4C67;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 5px;
+}
+.contactDiv p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.contactForm .row{
+    margin: 30px 0px;
+}
+.contactTitle{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+.contactForm .row .form-control{
+    outline-style: none;
+    border-style: none;
+    background-color: #F3F4F5;
+    text-decoration: none;
+    height: 65px;
+    border-radius: 0%;
+}
+.contactForm button{
+    outline-style: none;
+    border-style: none;
+    background-color: #ED4C67;
+    text-decoration: none;
+    border-radius: 0%;
+    color: white;
+}
+.contactForm button:hover{
+    background-color: #ee2b4b;
+    color: white;
+}
+/* Footer section */
+.footerSection{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    background-image: url(./images/footer\ img.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-family:'Poppins', sans-serif;
+}
+.footerSection::before{
+    content:'';
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+}
+.footerTitle{
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.footerContent{
+    padding: 30px 30px;
+}
+.footerIcon{
+    margin-top: 20px;
+}
+.footerIcon a{
+    text-decoration: none;
+    color: #fff;
+}
+.footerIcon a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.footerIcon i{
+    font-size: 18px;
+    padding: 8px 8px;
+    border: 1px solid white;
+    margin: 0px 5px;
+}
+.footerIcon i:hover{
+    background-color: #fff;
+    color: #000;
+    transition: .5s;
+}
+.footerContent i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.footerContent i,span{
+    margin-bottom: 15px;
+}
+.footerContent input,button{
+    text-decoration: none;
+    outline-style: none;
+    background: none;
+    background-color: #F3F4F5;
+    color: #fff;
+    border-radius: 0%;
+    margin-top: 5px;
+}
+.footerContent button{
+    background-color: #ee2b4b;
+    color: #fff;
+    border-radius: 0%;
+    margin-top: 5px;
+}
+.footerContent button:hover{
+    background-color: #ee2b4b;
+    color: #fff;
+}
+.quickIcon i{
+    font-size: 18px;
+}
+.footerContent .quickIcon span:hover{
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: .4s;
+    color: #ED4C67;
+}
+/* Main Footer Section */
+.mainFooter .row{
+    align-items: center;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+.mainFooter ._2ndCol{
+    text-align: end;
+}
+/* Media  */
+@media screen and (max-width: 700px) {
+    .banner-item a button{
+     background-color:#000;
+     color: #fff;
+    }
+    .servicesButton{
+        background-color: #ee2b4b;
+        color: #fff;
+    }
+    .card-section p{
+        min-width:250px;
+        text-align:center;
+    }
+    .contactDiv{
+        background-color: #ED4C67;
+        margin:0px 10px;
+        margin-bottom: 40px;
+        color:white;
+        padding:20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .style{
+        color: #fff;
+        font-weight: bold;
+        font-size: 25px;
+        margin-right: 5px;
+    
+    }
+    .mainFooter .row{
+        align-items: center;
+        text-align: center;
+    }
+    .mainFooter ._2ndCol{
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+    }
+   }
+ 
